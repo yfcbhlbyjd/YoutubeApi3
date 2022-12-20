@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="standart_size">16sp</dimen>
+    <dimen name="big_margin">48dp</dimen>
+    <dimen name="card_layout_width">120dp</dimen>
+    <dimen name="card_layout_height">80dp</dimen>
+    <dimen name="card_corner_radius">15dp</dimen>
+    <dimen name="widget_height">24dp</dimen>
+    <dimen name="widget_text_size">12sp</dimen>
+    <dimen name="title_margin_start">128dp</dimen>
+    <dimen name="title_text_size">16sp</dimen>
+    <dimen name="desk_text_size">12sp</dimen>
+    <dimen name="pd_horizontal">16dp</dimen>
+    <dimen name="pd_top">15dp</dimen>
+    <dimen name="margin_horizontal_16">16dp</dimen>
+    <dimen name="margin_bottom_32">32dp</dimen>
+    <dimen name="null_dp">0dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+</resources>
