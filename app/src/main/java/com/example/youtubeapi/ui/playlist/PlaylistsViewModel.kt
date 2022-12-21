@@ -7,7 +7,7 @@ import com.example.youtubeapi.repository.Repository
 
 class PlaylistsViewModel(private val repository: Repository): BaseViewModel() {
 
-    fun getPlaylists(): LiveData<Playlists> {
+    fun getPlaylists(): LiveData<Playlists?> {
         return repository.getPlaylists()
     }
 }
