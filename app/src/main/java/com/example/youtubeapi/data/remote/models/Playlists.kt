@@ -1,4 +1,4 @@
-package com.example.youtubeapi.data.remote.model
+package com.example.youtubeapi.data.remote.models
 
 import com.google.gson.annotations.SerializedName
 

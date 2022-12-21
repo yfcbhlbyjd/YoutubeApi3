@@ -14,14 +14,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.YoutubeApi"
+        android:theme="@style/Theme.YouTubeApi"
         tools:targetApi="31">
         <activity
-            android:name=".base.BaseActivity"
+            android:name=".core.ui.BaseActivity"
             android:exported="false">
         </activity>
         <activity
-            android:name=".core.ui.playlist.PlaylistActivity"
+            android:name=".ui.playlist.PlaylistsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

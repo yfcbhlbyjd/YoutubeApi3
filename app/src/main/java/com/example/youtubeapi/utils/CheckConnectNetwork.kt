@@ -1,19 +1,21 @@
-package com.example.youtubeapi.core.network
+package com.example.youtubeapi.utils
 
-import android.app.Application
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkRequest
 import androidx.lifecycle.LiveData
 
-class CheckConnect (private val connectivityManager: ConnectivityManager) : LiveData<Boolean>(){
+class CheckConnectNetwork (private val context: Context) :
+    LiveData<Boolean>(){
 
-    constructor(application: Application): this(application.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager)
+    private val connectivityManager: ConnectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE)as ConnectivityManager
+
     private val networkCallback =
         object : ConnectivityManager.NetworkCallback(){
-            override fun onAvailable(network: Network){
-            super.onAvailable(network)
+
+            override fun onAvailable(network: Network) {
+                super.onAvailable(network)
                 postValue(true)
             }
 
@@ -21,18 +23,17 @@ class CheckConnect (private val connectivityManager: ConnectivityManager) : Live
                 super.onLost(network)
                 postValue(false)
             }
+
         }
 
     override fun onActive() {
         super.onActive()
         val builder = NetworkRequest.Builder()
         connectivityManager.registerNetworkCallback(builder.build(), networkCallback)
-
     }
 
     override fun onInactive() {
         super.onInactive()
-
         connectivityManager.unregisterNetworkCallback(networkCallback)
     }
 }

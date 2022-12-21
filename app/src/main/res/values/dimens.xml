@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <dimen name="standart_size">16sp</dimen>
-    <dimen name="big_margin">48dp</dimen>
-    <dimen name="card_layout_width">120dp</dimen>
-    <dimen name="card_layout_height">80dp</dimen>
-    <dimen name="card_corner_radius">15dp</dimen>
-    <dimen name="widget_height">24dp</dimen>
-    <dimen name="widget_text_size">12sp</dimen>
-    <dimen name="title_margin_start">128dp</dimen>
-    <dimen name="title_text_size">16sp</dimen>
-    <dimen name="desk_text_size">12sp</dimen>
-    <dimen name="pd_horizontal">16dp</dimen>
-    <dimen name="pd_top">15dp</dimen>
-    <dimen name="margin_horizontal_16">16dp</dimen>
-    <dimen name="margin_bottom_32">32dp</dimen>
-    <dimen name="null_dp">0dp</dimen>
-    <dimen name="_8dp">8dp</dimen>
+    <!-- Margins -->
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="small_margin2x">8dp</dimen>
+    <dimen name="small_margin_6">6dp</dimen>
+    <dimen name="element_margin">8dp</dimen>
+    <dimen name="medium_margin">16dp</dimen>
+    <dimen name="medium_marginSp">16sp</dimen>
+    <dimen name="page_margin_half">10dp</dimen>
+    <dimen name="page_margin">20dp</dimen>
+    <dimen name="page_marginSp">20dp</dimen>
+    <dimen name="page_margin_25">25dp</dimen>
+    <dimen name="big_margin">30dp</dimen>
+    <dimen name="big_margin_35">34dp</dimen>
+    <dimen name="page_margin_x2">40dp</dimen>
+    <dimen name="page_margin_x3">60dp</dimen>
+    <dimen name="page_margin_x4">64dp</dimen>
+    <dimen name="page_margin_x5">100dp</dimen>
+    <dimen name="floating_button_margin">80dp</dimen>
+    <dimen name="margin_content_block">40dp</dimen>
+    <dimen name="big_margin22">22dp</dimen>
+    <dimen name="half_page2x">20sp</dimen>
+    <dimen name="twenty_four_dp">24dp</dimen>
+    <dimen name="twenty_four_sp">24sp</dimen>
 </resources>

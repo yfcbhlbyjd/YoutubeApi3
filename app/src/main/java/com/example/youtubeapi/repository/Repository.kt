@@ -2,24 +2,22 @@ package com.example.youtubeapi.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
-import com.example.youtubeapi.BuildConfig.API_KEY
+import com.example.youtubeapi.data.remote.models.Playlists
 import com.example.youtubeapi.data.remote.ApiService
-import com.example.youtubeapi.data.remote.model.Playlists
+import com.example.youtubeapi.utils.Constant
 import kotlinx.coroutines.Dispatchers
-
 
 
 class Repository(private val apiService: ApiService) {
 
-    fun playlist(): LiveData<Playlists> {
+    fun getPlaylists(): LiveData<Playlists> {
         return liveData(Dispatchers.IO) {
-            val response = apiService.getPlaylist(
-                "snippet,contentDetails", "UCDF_NIAEkcAUvzxe1DUzaQA", API_KEY, 50
+            val response = apiService.getPlaylists(
+                Constant.channelId, Constant.part, BuildConfig.API_KEY, Constant.maxResult
             )
-            if (response.isSuccessful){
-                response.body()?.let { emit(it) }
+            if (response.isSuccessful) {
+                emit(response.body())
             }
         }
     }
-
 }
